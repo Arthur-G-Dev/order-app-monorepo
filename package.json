@@ -1,0 +1,17 @@
+{
+  "name": "root",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "lerna run start",
+    "start:front": "lerna run start --scope={client-app,kitchen-app}",
+    "start:server": "lerna run start --scope=server"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^8.1.2"
+  }
+}

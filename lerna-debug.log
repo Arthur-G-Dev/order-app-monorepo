@@ -1,0 +1,34 @@
+0 silly argv { _: [ 'list' ], lernaVersion: '8.1.2', '$0': 'lerna' }
+1 notice cli v8.1.2
+2 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*"]
+3 verbose rootPath /Users/arthurgharibyan/Workspace/order-app
+4 error Error: Unable to create nodes for packages/server/package.json using plugin nx/core/package-json-workspaces.
+4 error
+4 error 	 Inner Error: Error: InvalidSymbol in /Users/arthurgharibyan/Workspace/order-app/packages/server/package.json at 17:22
+4 error [0m [90m 15 | [39m    "@overnightjs/logger": "^1.2.1",[0m
+4 error [0m [90m 16 | [39m    "@types/cors": "^2.8.12",[0m
+4 error [0m[31m[1m>[22m[39m[90m 17 | [39m    "cors": "^2.8.5",npx[0m
+4 error [0m [90m    | [39m                     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+4 error [0m [90m 18 | [39m    "express": "^4.18.2",[0m
+4 error [0m [90m 19 | [39m    "reflect-metadata": "^0.2.1",[0m
+4 error [0m [90m 20 | [39m    "ts-node": "^10.9.2",[0m
+4 error
+4 error     at parseJson (/Users/arthurgharibyan/Workspace/order-app/node_modules/nx/src/utils/json.js:25:15)
+4 error     at readJsonFile (/Users/arthurgharibyan/Workspace/order-app/node_modules/nx/src/utils/fileutils.js:22:37)
+4 error     at createNodeFromPackageJson (/Users/arthurgharibyan/Workspace/order-app/node_modules/nx/src/plugins/package-json-workspaces/create-nodes.js:47:47)
+4 error     at createNodes (/Users/arthurgharibyan/Workspace/order-app/node_modules/nx/src/plugins/package-json-workspaces/create-nodes.js:37:28)
+4 error     at buildProjectsConfigurationsFromProjectPathsAndPlugins (/Users/arthurgharibyan/Workspace/order-app/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:148:29)
+4 error     at createProjectConfigurations (/Users/arthurgharibyan/Workspace/order-app/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:156)
+4 error     at _retrieveProjectConfigurations (/Users/arthurgharibyan/Workspace/order-app/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:61:12)
+4 error     at retrieveProjectConfigurations (/Users/arthurgharibyan/Workspace/order-app/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:46:12)
+4 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+4 error     at async buildProjectGraphAndSourceMapsWithoutDaemon (/Users/arthurgharibyan/Workspace/order-app/node_modules/nx/src/project-graph/project-graph.js:71:69)
+4 error     at buildProjectsConfigurationsFromProjectPathsAndPlugins (/Users/arthurgharibyan/Workspace/order-app/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:175:27)
+4 error     at createProjectConfigurations (/Users/arthurgharibyan/Workspace/order-app/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:156)
+4 error     at _retrieveProjectConfigurations (/Users/arthurgharibyan/Workspace/order-app/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:61:12)
+4 error     at retrieveProjectConfigurations (/Users/arthurgharibyan/Workspace/order-app/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:46:12)
+4 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+4 error     at async buildProjectGraphAndSourceMapsWithoutDaemon (/Users/arthurgharibyan/Workspace/order-app/node_modules/nx/src/project-graph/project-graph.js:71:69)
+4 error     at async createProjectGraphAndSourceMapsAsync (/Users/arthurgharibyan/Workspace/order-app/node_modules/nx/src/project-graph/project-graph.js:136:25)
+4 error     at async createProjectGraphAsync (/Users/arthurgharibyan/Workspace/order-app/node_modules/nx/src/project-graph/project-graph.js:125:39)
+4 error     at async detectProjects (/Users/arthurgharibyan/Workspace/order-app/node_modules/lerna/dist/index.js:1563:25)
